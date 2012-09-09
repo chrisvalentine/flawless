@@ -1,0 +1,20 @@
+#entries-list 
+  -@entries.each do |e| 
+    .row
+      .span3
+        %span.span
+          %a{:href => "/entry/#{e.id}"} #{e.id}    
+      .span6
+        %span.entry-title
+          %h3
+            #{e.title}
+          %p
+            #{e.description}
+
+#add-entry
+  %form{:action => "/", :method => "post"}
+    %input{:type => "text", :name => "title", :placeholder => "Title"}
+    %input{:type => "text", :name => "description", :placeholder => "Description"}
+    %input{:type => "text", :name => "product", :placeholder => "Product"}
+    %input{:type => "text", :name => "product_version", :placeholder => "Version"}	
+    %input{:type => "submit", :value => "Submit"} 
