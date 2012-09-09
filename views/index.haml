@@ -1,14 +1,14 @@
 #entries-list 
   -@entries.each do |e| 
     .row
-      .span3
+      .span1
         %span.span
           %a{:href => "/entry/#{e.id}"} #{e.id}    
-      .span6
+      .span9
         %span.entry-title
           %h3
             #{e.title}
-          %p
+            |
             #{e.description}
 
 #add-entry

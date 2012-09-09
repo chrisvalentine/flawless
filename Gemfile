@@ -5,5 +5,6 @@ gem 'rake'
 gem 'data_mapper'
 gem 'dm-core'
 gem 'haml'
+gem 'thin'
 
 
