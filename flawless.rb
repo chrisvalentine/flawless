@@ -1,3 +1,8 @@
+#
+# Proper Header will go here
+#
+#
+#
 require 'sinatra'
 require 'data_mapper'
 require 'haml'
