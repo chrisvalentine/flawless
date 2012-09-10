@@ -1,0 +1,11 @@
+%br
+%table(cellspacing="0" cellpadding="0")
+  %tr.theader
+    - Date::ABBR_DAYNAMES.each do |name|
+      %th=name
+
+  - @dates.to_a.in_groups_of(7) do |week|
+    %tr
+      - week.each do |day|
+        %td{class: (@month != day.month) ? 'outofmonth' : 'inmonth'}
+          =day.day.to_s
